@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color:mediumaquamarine">
+
+<header><h3>Quizz</h3></header>
+
+<nav>
+    <a href="index.html">Introdução</a>
+    <a href="local.html">Localização</a>
+    <a href="multimedia.html">Multimédia</a>
+    <a href="info.html">Informações</a>
+    <b><a href="quizz.html">Quizz</a></b>
+    <a href="html5-css.html">HTML5</a>
+    <a href="../index.html"> Laboratórios PW</a>
+</nav>
+
+
+<main>
+    <section>
+        <p>Nesta página irá ser feito um quizz sobre a cidade que irá testar os conhecimentos adquiridos ao
+            visitar este sitte</p>
+    </section>
+
+    <section>
+        <form method="POST" action="mailto: a22007578@alunos.ulht.pt" enctype="multipart/form-data">
+            <fieldset>
+                <legend> quizz sobre a cidade</legend>
+                <fieldset>
+                    <legend> info</legend>
+                    <input type="text" placeholder="insira o seu nome" name="nome"> <br>
+                    <input type="text" placeholder="insira o seu apelido" name="apelido"><br>
+                    <input type="email" placeholder="insira o seu email" name="email"> <br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend> quizz</legend>
+                    <legend>Pergunta1: Qual o nome da cidade</legend>
+                    <input type="text" placeholder="qual o nome da cidade " name="resposta 1" autocomplete="on"
+                           size="10" maxlength="10"><br>
+
+
+                    <br>
+                    <legend>Pergunta 2:Quantos habitantes tem a cidade</legend>
+                    <input type="radio" id="resposta2.1" name="nr habitantes" value=150789>
+                    <label for="resposta2.1"> 150 789</label><br>
+
+                    <input type="radio" id="resposta2.2" name="nr habitantes" value=235058>
+                    <label for="resposta2.2"> 235 058</label><br>
+
+                    <input type="radio" id="resposta2.3" name="nr habitantes" value=261905>
+                    <label for="resposta2.3"> 261 905</label><br>
+                    <br>
+
+                    <legend>Pergunta 3:Quais os simbolos da cidade</legend>
+                    <input type="checkbox" id="resposta3.1" name="resposta3.1" value="Leao">
+                    <label for="resposta3.1"> Leão</label><br>
+                    <input type="checkbox" id="resposta3.2" name="resposta3.2" value="aguia">
+                    <label for="resposta3.2"> Águia</label><br>
+                    <input type="checkbox" id="resposta3.3" name="resposta3.3" value="anjo">
+                    <label for="resposta3.3"> Anjo</label><br><br>
+
+
+                    <label for="datemin">Data da formação de Veneza:</label>
+                    <input type="date" id="datemin" name="data veneza" max="2000-01-02" min="0000-01-01"> <br>
+                    <br>
+
+                    <legend>Pergunta 4:Insira uma imagem da cidade</legend>
+                    <label for="imagem">Imagem:</label>
+                    <input type="file" id="imagem" name="imagem">
+                    <br>
+                    <br>
+                    <legend>Pergunta 5: Cor para a cidade</legend>
+                    <label for="favcolor">Escolha uma cor para caracterizar a cidade:</label>
+                    <input type="color" id="favcolor" name="Cor Da Cidade" value="#ff0000">
+                    <br>
+                    <legend>Pergunta 6:</legend>
+                    <label for="quantity">Quantos elementos foram apresentados sobre a cidade:</label>
+                    <input type="number" id="quantity" name="elementos" min="1" max="100">
+                    <br>
+
+                    <legend>Pergunta 7:</legend>
+                    <label for="vol">Area da Cidade</label>
+                    <input type="range" id="vol" name="area" min="0" max="1000">
+                    <br>
+
+                    <legend>Pergunta 8: A cidade tem um basílica importante</legend>
+                    <select id="pergunta8" name="pergunta8">
+                        <option value="Sim">Sim</option>
+                        <option value="Não">Não</option>
+                    </select>
+
+
+                    <br>
+                    <label for="pergunta9">A cidade pertence a que pais</label>
+                    <input list="pergunta9" name="pergunta9">
+                    <datalist id="pergunta9">
+                        <option value="Portugal">
+                        <option value="Espanha">
+                        <option value="Itália">
+                        <option value="França">
+                        <option value="Rússia">
+                    </datalist>
+                    <br>
+                    Insira a sua opinião:
+                    <br>
+                    <textarea name="Opinião" rows="10" cols="70">Escreve a tua opinião.</textarea>
+
+
+                </fieldset>
+                <input type="submit" value="Entregar e terminar">
+            </fieldset>
+
+
+        </form>
+
+    </section>
+</main>
+</body>
+</html>

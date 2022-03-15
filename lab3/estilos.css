@@ -1,0 +1,101 @@
+{ / Universal /
+    font-family: sans-serif;
+    background: khaki;
+}
+
+td:nth-of-type(even){
+  background: white;
+}
+
+td:nth-of-type(odd){
+  background: lightgray;
+}
+
+h3:before{ / Tipo /
+    color: GoldenRod;
+    content: "";
+}
+
+h3:after{ / Tipo /
+    content: "";
+}
+
+h2{ / Tipo /
+    color: Green;
+    content: "";
+}
+
+h2:after{ / Tipo /
+    content: "";
+}
+
+
+h1{ / Tipo /
+    color: Red;
+    content: "";
+}
+
+h1:after{ / Tipo /
+    content: "";
+}
+
+
+.important{ / Classe /
+    font-weight: bold;
+}
+
+#unico{ / id /
+    background-color: aqua;
+}
+
+a[target="obj"] { / atributo /
+  background-color: yellow;
+}
+
+div:hover{ / Pseudo-Classe /
+    background-color: violet;
+}
+
+p::first-letter{ / Pseudo-Elemento */
+    font-size: 2em;
+}
+
+.pintaCaixas1{
+    color: purple;
+    background-color: red;
+}
+
+.pintaCaixas2{
+    color: gold;
+    background-color: white;
+}
+
+.pintaCaixas3{
+    color: red;
+    background-color: blue;
+}
+
+.pintaCaixas4{
+    color: green;
+    background-color: orange;
+}
+
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: purple ;
+}
+
+a:hover{
+    color: black;
+}
+
+a:link{
+    color: red;
+}
+
+input{
+    display: inline-block;
+}
