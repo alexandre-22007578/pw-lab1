@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab4</title>
+    <style>
+    * {box-sizing: border-box;}
+
+    .capitais{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: space-around;
+        background-color: rgb(173,216,230):
+        padding: 50px;
+    }
+
+    .capitais > div{
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px #888888;
+        margin: 10px;
+    }
+
+    .capitais img{
+        border-radius: 20px 0 0 20px;
+        height: 100%;
+    }
+
+    .capitais div div:last-child{
+        width: 150px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 0 20px 20px 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu div{
+        display: flex;
+
+    }
+
+    .menu a:last-child{
+        margin-left:auto;
+    }
+
+    .nav-menu{
+        display: flex;
+    }
+    a{
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+
+
+        background-color: LightSlateGrey;
+        margin: 5px;
+        text-decoration: none;
+        box-shadow: 2px 3px 3px black;
+        border-radius: 10px;
+    }
+
+    a:hover{
+        background-color: FireBrick;
+        font-weight: bold;
+
+    }
+
+    .flex-container-foto {
+        height: 250px;
+        background-image: url("images/teste1.png");
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        font-size: 2rem;
+        color: Brown;
+        font-weight: bold;
+        }
+
+    .mover_direita{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: center;
+
+
+        font-size: 4rem;
+        color: White;
+        font-weight: bold;
+        margin-left: 500px;
+    }
+
+    .viajantes{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: space-around;
+        background-color: rgb(173,216,230):
+        padding: 50px;
+
+    }
+
+    .viajantes > div{
+        display: flex;
+        justify-content: space-around;
+        border-radius: 20px;
+        box-shadow: 5px 5px 15px #888888;
+        margin: 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+<header>
+
+    <div class="menu">
+
+        <nav class="nav-menu">
+            <a href="#A1"> Cidades Europeias </a>
+            <a href="#A2"> Dicas Para Viajar</a>
+            <a href="#A3"> Destinos de Sonho </a>
+            <a href="../index.html"> Link Laboratorios </a>
+        </nav>
+    </div>
+
+    <br>
+
+    <div class="flex-container-foto">
+        <div class="mover_direita"> Apelo à Paz</div>
+    </div>
+</header>
+
+
+<h1 id="A1">Capitais Europeias</h1>
+<div class="capitais">
+    <div>
+        <div><img src="images\bruxelas.avif" alt="bruxelas"></div>
+        <div><p>Bruxelas</p></div>
+    </div>
+
+    <div>
+        <div><img src="images\lisboa.avif" alt="lisboa"></div>
+        <div><p>Lisboa</p></div>
+    </div>
+
+    <div>
+        <div><img src="images\budapeste.avif" alt="lisboa"></div>
+        <div><p>Budapeste</p></div>
+    </div>
+
+    <div>
+        <div><img src="images\londres.avif" alt="lisboa"></div>
+        <div><p>Londres</p></div>
+    </div>
+
+    <div>
+        <div><img src="images\milao.avif" alt="lisboa"></div>
+        <div><p>Milao</p></div>
+    </div>
+
+    <div>
+        <div><img src="images\paris.avif" alt="lisboa"></div>
+        <div><p>Paris</p></div>
+    </div>
+
+    <div>
+        <div><img src="images\praga.avif" alt="lisboa"></div>
+        <div><p>Praga</p></div>
+    </div>
+
+    <div>
+        <div><img src="images\reykiavik.avif" alt="lisboa"></div>
+        <div><p>Reykiavik</p></div>
+    </div>
+
+    <div>
+        <div><img src="images\roma.avif" alt="lisboa"></div>
+        <div><p>Roma</p></div>
+    </div>
+
+    <div>
+        <div><img src="images\varsovia.avif" alt="lisboa"></div>
+        <div><p>Varsovia</p></div>
+    </div>
+
+    <div>
+        <div><img src="images\viena.avif" alt="lisboa"></div>
+        <div><p>Viena</p></div>
+    </div>
+
+
+</div>
+
+
+<h1 id="A2">Dicas para Viajantes</h1>
+<div class="viajantes">
+    <div>
+        <h1>Dica1 <i>✈</i></h1>
+        <p>Pequeno texto sobre isto
+        depois fazer mais dicas</p>
+    </div>
+
+</div>
+
+
+</body>
+</html>
