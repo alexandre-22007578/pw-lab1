@@ -6,6 +6,8 @@
     <style>
     * {box-sizing: border-box;}
 
+
+
     .capitais{
         display: flex;
         flex-flow: row wrap;
@@ -19,7 +21,7 @@
         display: flex;
         justify-content: space-around;
         border-radius: 20px;
-        box-shadow: 5px 5px 15px #888888;
+        box-shadow: 5px 5px 12px FireBrick;
         margin: 10px;
     }
 
@@ -67,7 +69,6 @@
     a:hover{
         background-color: FireBrick;
         font-weight: bold;
-
     }
 
     .flex-container-foto {
@@ -105,8 +106,6 @@
         align-items: space-around;
         background-color: rgb(173,216,230);
         padding: 50px;
-
-
     }
 
     .viajantes > div{
@@ -115,12 +114,164 @@
         height: 300p;
         justify-content: space-around;
         border-radius: 20px;
-        box-shadow: 5px 5px 15px #888888;
+        box-shadow: 5px 5px 12px FireBrick;
         margin: 10px;
         padding: 5px;
         gap: 10px;
         background-color: white;
     }
+
+    .imagem1 {
+        grid-area: coimbra;
+    }
+
+    .imagem2 {
+          grid-area: funchal;
+    }
+
+    .imagem3 {
+          grid-area: viana;
+    }
+
+    .imagem4 {
+          grid-area: delgada;
+    }
+
+    .imagem5 {
+          grid-area: aveiro;
+    }
+
+    .imagem6 {
+          grid-area: parque;
+    }
+    @media (min-width:901px) {
+
+        .destinos{
+            background-color: rgb(173,216,230);
+            display: grid;
+            grid-template-areas:
+                                "coimbra funchal viana parque"
+                                "delgada delgada aveiro aveiro";
+
+            padding: 10px;
+            gap: 5px;
+            justify-content: space-between;
+        }
+    }
+
+    @media (max-width:900px) {
+
+        img{
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .destinos{
+            background-color: rgb(173,216,230);
+            display: grid;
+            grid-template-areas:
+                                "coimbra"
+                                "funchal"
+                                "viana"
+                                "delgada"
+                                "aveiro"
+                                "parque";
+
+            padding: 10px;
+            gap: 5px;
+            justify-content: space-between;
+        }
+    }
+
+    destino img{
+        border-radius: 20px 0 0 20px;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .container {
+        position: relative;
+        color: white;
+        row: 3;
+    }
+
+    .top-left {
+        position: absolute;
+        color: white;
+        margin: 20px;
+        font-size: large;
+    }
+
+    .button {
+        position: absolute;
+        background-color: lightgray;
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        right: 10px;
+        bottom: 10px;
+        text-decoration: none;
+        display: flex;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-shadow: 5px 5px 12px FireBrick;
+        border-radius: 10px;
+    }
+
+
+    .bottom-left {
+        position: absolute;
+        color: white;
+        font-size: xx-large;
+        bottom: 70px;
+        left: 20px;
+    }
+
+    .bottom-left2 {
+        position: absolute;
+        color: white;
+        font-size: large;
+        bottom: 30px;
+        left: 20px;
+    }
+
+    .text{
+        position: relative;
+    }
+
+    .texto_grande{
+        position: relative;
+        color: black;
+        bottom: 0;
+        left: 50px;
+        display: flex;
+        font-size: 3vmin;
+    }
+
+    .texto-paragrafo{
+        position: relative;
+        bottom: -1px;
+        left: 50px;
+        display: flex;
+        font-size: 2.5vmin;
+    }
+
+    .button:hover{
+        background-color: FireBrick;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -160,7 +311,7 @@
 </header>
 
 
-<h1 id="A1" >Capitais Europeias</h1>
+<h1 id="A1">Capitais Europeias</h1>
 <div class="capitais">
     <div>
         <div><img src="images\bruxelas.avif" alt="bruxelas"></div>
@@ -266,12 +417,92 @@
     </div>
 
 
-
 </div>
 
-<div id="A3">
-    <h1>Destino de Sonho</h1>
+<h1>Destino de Sonho</h1>
+<div id="A3" class="destinos">
 
+
+    <div class="imagem1">
+        <div class="container">
+
+            <div class="top-left">Cidade</div>
+
+            <div class="bottom-left">Coimbra</div>
+
+            <div class="bottom-left2">Universidade</div>
+
+            <img src="images/coimbra.png" alt="error">
+        </div>
+    </div>
+
+    <div class="imagem2">
+        <div class="container">
+
+            <div class="top-left">Cidade</div>
+
+            <div class="bottom-left">funchal</div>
+
+            <div class="bottom-left2">Ilha</div>
+
+            <img src="images/funchal.png" alt="error">
+        </div>
+    </div>
+
+    <div class="imagem3">
+        <div class="container">
+
+            <div class="top-left">Cidade</div>
+
+            <div class="bottom-left">viana</div>
+
+            <div class="bottom-left2">Castelo</div>
+
+            <img src="images/viana.png" alt="error">
+        </div>
+    </div>
+
+    <div class="imagem4">
+        <div class="container">
+
+            <div class="top-left">Cidade</div>
+
+            <div class="bottom-left">pontaDelgada</div>
+
+            <div class="bottom-left2">Ilha</div>
+
+            <img src="images/pontaDelgada.png" alt="error">
+
+        </div>
+    </div>
+
+    <div class="imagem5">
+        <div class="container">
+
+            <div class="top-left">Cidade</div>
+
+            <div class="bottom-left">aveiro</div>
+
+            <div class="bottom-left2">Ria</div>
+
+            <img src="images/aveiro.png" alt="error">
+
+        </div>
+    </div>
+
+
+    <div class="imagem6">
+
+        <div><img src="images/parque.png" alt="error"></div>
+
+        <div class="text"><p class="texto_grande"> Venha visitarnos</p>
+            <p class="texto-paragrafo">Para mais informações</p>
+        </div>
+
+        <div class="text">
+            <button class="button"> Carregue aqui</button>
+        </div>
+    </div>
 
 
 </div>
