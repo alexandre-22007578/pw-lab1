@@ -120,6 +120,10 @@
         background-color: white;
     }
 
+    .body{
+        overflow-x: hidden;
+    }
+
     .imagem1 {
         grid-area: coimbra;
     }
@@ -148,9 +152,12 @@
         .destinos{
             background-color: rgb(173,216,230);
             display: grid;
+            grid-template-columns: auto auto auto auto;
+
             grid-template-areas:
-                                "coimbra funchal viana parque"
-                                "delgada delgada aveiro aveiro";
+                                "coimbra funchal parque"
+                                "delgada delgada aveiro";
+
 
             padding: 10px;
             gap: 5px;
@@ -193,6 +200,10 @@
         position: relative;
         color: white;
         row: 3;
+    }
+
+    .width-100{
+        width:100;
     }
 
     .top-left {
@@ -282,11 +293,12 @@
 
 
 
+
     </style>
 
 
 </head>
-<body>
+<body class="body">
 
 
 <header>
@@ -386,14 +398,17 @@
 
     <div>
         <h1>#3-Informação <i>📡</i></h1>
-        <p>Uma das coisas fundamentais é estar informado sobre o local para o qual se quer visitar e assim estar preparado
-            lidar com algumas das adversidades que possam surgir durante o período de férias  </p>
+        <p>Uma das coisas fundamentais é estar informado sobre o local para o qual se quer visitar e assim estar
+            preparado
+            lidar com algumas das adversidades que possam surgir durante o período de férias </p>
     </div>
 
     <div>
         <h1>#4-Bom Tempo<i>🌞</i></h1>
-        <p>Procure viajar para um destino numa boa altura em relação às condições atmosféricas, pois não nada interessante
-            planear uma viagem e depois ser obrigado a ficar na moradia porque as condições metriológicas assim o obrigam</p>
+        <p>Procure viajar para um destino numa boa altura em relação às condições atmosféricas, pois não nada
+            interessante
+            planear uma viagem e depois ser obrigado a ficar na moradia porque as condições metriológicas assim o
+            obrigam</p>
     </div>
 
     <div>
@@ -411,13 +426,15 @@
 
     <div>
         <h1>#7-Sonhos<i>💡</i></h1>
-        <p>É também importante tentar realizar a nossa viagem de sonho e aproveita la ao máximo para atingir um sentimento
+        <p>É também importante tentar realizar a nossa viagem de sonho e aproveita la ao máximo para atingir um
+            sentimento
             de realização e assim ser capaz de saboriar todas as boas coisas que a vida nos pode oferecer</p>
     </div>
 
     <div>
         <h1>#8-Aproveitar<i>🎉</i></h1>
-        <p>Por fim o mais importante de uma viagem é conseguir aproveitar ao máximo as férias porque é aí que vamos conseguir
+        <p>Por fim o mais importante de uma viagem é conseguir aproveitar ao máximo as férias porque é aí que vamos
+            conseguir
             descansar e usar as férias para estar recarregar as energias e depois estar de volta a 100%</p>
     </div>
 
@@ -437,7 +454,7 @@
 
             <div class="bottom-left2">Universidade</div>
 
-            <img src="images/coimbra.png" alt="error">
+            <img  src="images/coimbra.png" alt="error"  >
         </div>
     </div>
 
@@ -450,22 +467,11 @@
 
             <div class="bottom-left2">Ilha</div>
 
-            <img src="images/funchal.png" alt="error">
+            <img  src="images/funchal.png" alt="error">
         </div>
     </div>
 
-    <div class="imagem3">
-        <div class="container">
 
-            <div class="top-left">Cidade</div>
-
-            <div class="bottom-left">viana</div>
-
-            <div class="bottom-left2">Castelo</div>
-
-            <img src="images/viana.png" alt="error">
-        </div>
-    </div>
 
     <div class="imagem4">
         <div class="container">
@@ -475,6 +481,7 @@
             <div class="bottom-left">pontaDelgada</div>
 
             <div class="bottom-left2">Ilha</div>
+
 
             <img src="images/pontaDelgada.png" alt="error">
 
@@ -498,7 +505,7 @@
 
     <div class="imagem6">
 
-        <div><img src="images/parque.png" alt="error"></div>
+        <div><img class="width-100" src="images/parque.png" alt="error"></div>
 
         <div class="text"><p class="texto_grande"> Venha visitarnos</p>
             <p class="texto-paragrafo">Para mais informações</p>
